@@ -1,0 +1,8 @@
+node_modules/
+# Ignore artifacts:
+build/
+coverage/
+
+vite-env.d.ts
+vite.config.ts
+jest.config.js
