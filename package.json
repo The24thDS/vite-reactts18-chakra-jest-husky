@@ -17,7 +17,7 @@
     "format": "prettier --config ./.prettierrc -w src/**/*.{tsx,ts} && git update-index --again",
     "pretest": "yarn lint:fix",
     "test": "jest --colors --passWithNoTests",
-    "posttest": "npx serve coverage/lcov-report",
+    "posttest": "npx http-server coverage/lcov-report",
     "test:watch": "yarn test --collectCoverage=false --watch",
     "prepare": "husky install"
   },
