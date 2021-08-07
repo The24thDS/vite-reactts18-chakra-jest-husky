@@ -14,7 +14,7 @@
     "serve": "vite preview",
     "lint": "eslint src --ext .tsx --ext .ts",
     "lint:fix": "yarn lint --fix",
-    "format": "prettier --config ./.prettierrc -w src/**/*.{tsx,ts} && git add -A .",
+    "format": "prettier --config ./.prettierrc -w src/**/*.{tsx,ts} && git update-index --again",
     "pretest": "yarn lint:fix",
     "test": "jest --colors --passWithNoTests",
     "posttest": "npx serve coverage/lcov-report",
@@ -24,6 +24,7 @@
   "dependencies": {
     "@chakra-ui/icons": "^1.0.14",
     "@chakra-ui/react": "^1.6.5",
+    "@chakra-ui/system": "^1.7.1",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "framer-motion": "^4",
@@ -31,6 +32,7 @@
     "react-dom": "^17.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.15.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@types/jest": "^26.0.24",
