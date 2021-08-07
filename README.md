@@ -31,13 +31,19 @@ This is a [React](https://reactjs.org) + [TypeScript](https://www.typescriptlang
    cd my-app
    ```
 
-3. Install dependencies.
+3. Initialize a git repository.
+
+   ```bash
+   git init
+   ```
+
+4. Install dependencies.
 
    ```bash
    yarn
    ```
 
-4. Serve with hot reload at http://localhost:3000.
+5. Serve with hot reload at http://localhost:3000.
    ```bash
    yarn dev
    ```
