@@ -65,6 +65,10 @@ const App = (): JSX.Element => {
           >
             Typescript
           </Link>
+          {' | '}
+          <Link href="https://chakra-ui.com" isExternal color="#61dafb">
+            Chakra UI
+          </Link>
         </Text>
       </Flex>
       <ThemeToggleButton pos="fixed" bottom="2" right="2" />
