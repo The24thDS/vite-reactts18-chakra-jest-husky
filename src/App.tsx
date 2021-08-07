@@ -1,7 +1,7 @@
+import { motion } from 'framer-motion';
 import { useState } from 'react';
 
-import { Box, Button, Flex, Image, Text, Link } from '@chakra-ui/react';
-import { motion } from 'framer-motion';
+import { Box, Button, Flex, Image, Link, Text } from '@chakra-ui/react';
 
 import logo from './logo.svg';
 
