@@ -22,7 +22,7 @@ This is a [React](https://reactjs.org) + [TypeScript](https://www.typescriptlang
 1. Create the project.
 
    ```bash
-   npx degit The24thDS/vite-reactTS-chakra-jest my-app
+   npx degit The24thDS/vite-reactts17-chakra-jest-husky my-app
    ```
 
 2. Access the project directory.
