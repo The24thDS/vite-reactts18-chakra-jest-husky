@@ -5,18 +5,12 @@ import styled from '@emotion/styled';
 import transientOptions from '../utils/general';
 
 // PROP TYPES
-interface RoundButtonProps extends IconButtonProps {
-  $colorMode: string;
-}
 type ThemeToggleButtonProps = Omit<IconButtonProps, 'aria-label'>;
 
 // CONSTS and LETS
 const iconSize = 20;
 
-const RoundButton: React.FunctionComponent<RoundButtonProps> = styled(
-  IconButton,
-  transientOptions
-)`
+const RoundButton = styled(IconButton, transientOptions)`
   box-shadow: 0 0 100px 20px
     ${({ $colorMode }) => ($colorMode === 'light' ? 'black' : 'white')};
   & svg {
