@@ -6,6 +6,7 @@
     "email": "hello@david-sima.dev",
     "url": "https://github.com/The24thDS"
   },
+  "private": true,
   "license": "MIT",
   "scripts": {
     "dev": "vite",
@@ -13,10 +14,12 @@
     "serve": "vite preview",
     "lint": "eslint src --ext .tsx --ext .ts",
     "lint:fix": "yarn lint --fix",
+    "format": "prettier --config ./.prettierrc -w src/**/*.{tsx,ts} && git add -A .",
     "pretest": "yarn lint:fix",
     "test": "jest --colors --passWithNoTests",
     "posttest": "npx serve coverage/lcov-report",
-    "test:watch": "yarn test --collectCoverage=false --watch"
+    "test:watch": "yarn test --collectCoverage=false --watch",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.0.14",
@@ -45,6 +48,7 @@
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
+    "husky": "^7.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.0.6",
     "prettier": "^2.3.2",
