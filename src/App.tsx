@@ -6,6 +6,8 @@ import { Box, Button, Flex, Image, Link, Text } from '@chakra-ui/react';
 import ThemeToggleButton from './components/ThemeToggleButton';
 import logo from './logo.svg';
 
+const textFontSizes = [16, 18, 24, 30];
+
 const App = (): JSX.Element => {
   const [count, setCount] = useState(0);
 
@@ -29,20 +31,21 @@ const App = (): JSX.Element => {
         >
           <Image src={logo} alt="" h="40vmin" />
         </motion.div>
-        <Text>Hello Vite + React + Typescript + Chakra UI!</Text>
-        <Text>
-          <Button
-            colorScheme="blue"
-            fontSize="xl"
-            onClick={() => setCount((c) => c + 1)}
-          >
-            count is: {count}
-          </Button>
+        <Text fontSize={textFontSizes}>
+          Hello Vite + React + Typescript + Chakra UI!
         </Text>
-        <Text>
+        <Button
+          colorScheme="blue"
+          fontSize={textFontSizes}
+          onClick={() => setCount((c) => c + 1)}
+          marginTop="2"
+        >
+          count is: {count}
+        </Button>
+        <Text fontSize={textFontSizes}>
           Edit <code>App.tsx</code> and save to test HMR updates.
         </Text>
-        <Text>
+        <Text fontSize={textFontSizes}>
           <Link href="https://reactjs.org" isExternal color="#61dafb">
             Learn React
           </Link>
