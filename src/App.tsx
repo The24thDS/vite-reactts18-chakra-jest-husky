@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 import { Box, Button, Flex, Image, Link, Text } from '@chakra-ui/react';
 
+import ThemeToggleButton from './components/ThemeToggleButton';
 import logo from './logo.svg';
 
 const App = (): JSX.Element => {
@@ -63,6 +64,7 @@ const App = (): JSX.Element => {
           </Link>
         </Text>
       </Flex>
+      <ThemeToggleButton pos="fixed" bottom="2" right="2" />
     </Box>
   );
 };
