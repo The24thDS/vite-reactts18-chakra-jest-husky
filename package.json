@@ -14,7 +14,7 @@
     "serve": "vite preview",
     "lint": "eslint src --ext .tsx --ext .ts",
     "lint:fix": "yarn lint --fix",
-    "format": "prettier --config ./.prettierrc -w src/**/*.{tsx,ts} && git update-index --again",
+    "format": "prettier --config ./.prettierrc -w 'src/**/*.{tsx,ts}' && git update-index --again",
     "pretest": "yarn lint:fix",
     "test": "jest --colors --passWithNoTests",
     "posttest": "npx http-server coverage/lcov-report",
