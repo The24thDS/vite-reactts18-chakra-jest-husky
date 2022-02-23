@@ -19,7 +19,7 @@ const RoundButton = styled(IconButton, transientOptions)`
   }
 `;
 
-const ThemeToggleButton = (props: ThemeToggleButtonProps): JSX.Element => {
+function ThemeToggleButton(props: ThemeToggleButtonProps): JSX.Element {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
@@ -32,6 +32,6 @@ const ThemeToggleButton = (props: ThemeToggleButtonProps): JSX.Element => {
       {...props}
     />
   );
-};
+}
 
 export default ThemeToggleButton;
