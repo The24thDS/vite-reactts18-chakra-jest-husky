@@ -19,7 +19,8 @@
     "test": "jest --colors --passWithNoTests",
     "posttest": "npx http-server coverage/lcov-report",
     "test:watch": "yarn test --collectCoverage=false --watch",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "cz": "cz"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.1.7",
