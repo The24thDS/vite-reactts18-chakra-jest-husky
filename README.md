@@ -43,7 +43,7 @@ This is a [React](https://reactjs.org) + [TypeScript](https://www.typescriptlang
    yarn
    ```
 
-5. Serve with hot reload at http://localhost:3000.
+5. Serve with hot reload at http://localhost:5173.
    ```bash
    yarn dev
    ```
